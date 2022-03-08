@@ -17,11 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body id="top">
-    <header>
-        <p>
-            <h1>Elektronika</h1>
-        </p>
+<body>
+    <header id="top">
+        <a href="index.html">
+            <p>
+                <h1>Elektronika</h1>
+            </p>
+        </a>
     </header>
 
     <nav>
@@ -39,7 +41,10 @@
         </a> 
         <a href="zadania.html">
             <div>Zadania</div>
-        </a>     
+        </a>
+        <a href="lekcje/">
+            <div>Lekcje</div>
+        </a>
     </nav>
     
     <main>
@@ -84,6 +89,7 @@
             </article>
         </aside>
     </main>
+    
 
     <footer id="kontakt">
         <a href="#top">
@@ -91,6 +97,63 @@
         </a>
         <p>Kontakt:</p>
         <a href="mailto:123@gmail.com">Email</a>
+        <br>
+
+        <article id="formularz">
+            <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
+                <fieldset>
+                    <legend>Podstawowe dane</legend>
+                    <label> Podaj imie:
+                    <br>
+                    <input type="text" size="10" name="imie" autocomplete="off" placeholder="imie" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj nazwisko:
+                        <br>
+                        <input type="text" size="10" name="nazwisko" autocomplete="off" placeholder="nazwisko" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj email:
+                        <br>
+                        <input type="email" name="email" placeholder="email" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj numer telefonu: (opcjonalnie)
+                        <br>
+                        <input type="tel" name="nr telefonu" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="000-000-000">
+                    </label>
+                </fieldset>
+
+                <br>
+                
+                <fieldset>
+                    <legend>Wybierz typ subskrybcji:</legend>
+                    <input type="radio" name="subskrybcja" value="standard" required="required"> Standard
+                    <input type="radio" name="subskrybcja" value="premium" required="required"> Premium
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Zgoda na RODO</legend>
+                    <label style="font-style: italic;">
+                        <input type="checkbox" name="rodo" required="required">
+                        Wyrażam zgodę na przetwarzanie moich danych osobowych (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+                    </input>
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <label> Dodatkowe uwagi:
+                    <br>
+                    <textarea name="uwagi" cols="25" rows="10"></textarea>
+                </label>
+                <br>                    
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </form>
+        </article>
     </footer>
 </body>
 </html>

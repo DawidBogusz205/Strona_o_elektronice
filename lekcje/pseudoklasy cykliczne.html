@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset='utf-8'/>         <!--polski typ znakowy-->
+    <title>Elektronika</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'/>    <!--zaimportowanie pliku css-->
+    <meta name="keywords" content="elektronika,układy elektroniczne, pcb"/>
+    <meta name="description" content="Forum, porady i wszystko o elektronice"/>
+    <meta name="autor" content="Dawid'bugi'Bogusz"/>
+    <meta name="robots" content="all"/>     <!-- index, noindex, all, none, follow, nofollow-->
+    <!--czcionka roboto VVV-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /*pseudoklasy cykliczne
+        :first-line
+        :first-letter
+        :first-child
+        :last-child
+        :only-child
+        :nth-of-type()
+        */
+        /*pierwsze linie w tekscie*/
+        p:first-line{
+            color: aqua;
+        }
+        /*pierwsze litery w tekscie*/
+        ol li:first-child{
+            color: chocolate;
+        }
+        /*kazdy paragraf ktory jest kolejnym dzieckiem (n)kolejne (2n)co drugie (2n+1)nieparzyste dziecko (5n+3)co piate zaczynajac od 3 */
+        p:nth-child(2n){
+            color: cornflowerblue;
+        }
+        /*
+        #8fae3a
+        #9dc03e
+        #acd244
+        #b3dd47
+        #c1eb4e
+        przestrzen pomiedzy napisami
+        */
+
+        .zad div{
+            height: 30px;
+            padding: 5px;
+        }
+        .zad div:nth-child(5n+1){
+            background-color: #8fae3a;
+        }
+        .zad div:nth-child(5n+2){
+            background-color: #9dc03e;
+        }
+        .zad div:nth-child(5n+3){
+            background-color: #acd244;
+        }
+        .zad div:nth-child(5n+4){
+            background-color: #b3dd47;
+        }
+        .zad div:nth-child(5n+5){
+            background-color: #c1eb4e;
+        }
+        .zad div:hover{
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="top">
+        <a href="../index.html">
+            <p>
+                <h1>Elektronika</h1>
+            </p>
+        </a>
+    </header>
+
+    <nav>
+        <a href="../index.html">
+            <div>Strona główna</div>
+        </a>
+        <a href="#kontakt">
+            <div>Kontakt</div>
+        </a>
+        <a href="../playground.html">
+            <div>Playground</div>
+        </a>
+        <a href="../strony_kolegow.html">
+            <div>Strony kolegów</div>
+        </a> 
+        <a href="../zadania.html">
+            <div>Zadania</div>
+        </a>
+        <a href="../lekcje/">
+            <div>Lekcje</div>
+        </a>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <ol>
+                    <li>asada</li>
+                    <li>badsa</li>
+                    <li>casd</li>
+                    <li>dads</li>
+                    <li>aadsa</li>
+                    <li>basda</li>
+                    <li>casda</li>
+                    <li>dasda</li>
+                    <li>aasda</li>
+                    <li>basda</li>
+                </ol>
+                
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </article>
+
+            <article class="zad">
+                <div>jeden</div>
+                <div>dwa</div>
+                <div>trzy</div>
+                <div>cztery</div>
+                <div>piec</div>
+                <div>szesc</div>
+                <div>siedem</div>
+                <div>osiem</div>
+                <div>dziewiec</div>
+                <div>dziesiec</div>
+                <div>jedenascie</div>
+                <div>dwanascie</div>
+                <div>trzynascie</div>
+                <div>czternascie</div>
+                <div>pietnascie</div>
+                <div>szesnascie</div>
+                <div>siedemnascie</div>
+                <div>osiemnascie</div>
+                <div>dziewietnascie</div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="kontakt">
+        <a href="#top">
+            <img src="img/pointer_up.png" alt="Powrót"/>
+        </a>
+        <p>Kontakt:</p>
+        <a href="mailto:123@gmail.com">Email</a>
+    </footer>
+</body>
+</html>

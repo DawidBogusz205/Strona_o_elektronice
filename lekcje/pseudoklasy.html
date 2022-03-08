@@ -6,7 +6,7 @@
     <title>Elektronika</title>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'/>    <!--zaimportowanie pliku css-->
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'/>    <!--zaimportowanie pliku css-->
     <meta name="keywords" content="elektronika,układy elektroniczne, pcb"/>
     <meta name="description" content="Forum, porady i wszystko o elektronice"/>
     <meta name="autor" content="Dawid'bugi'Bogusz"/>
@@ -17,109 +17,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        /*zadania*/
-        #zad1 {
-        color: black;
+        a:link{
+            color: red;
         }
-        #zad1 img {
-        height: 150px;
-        width: 10%;
+        a:visited{
+            color: green;
         }
-        #zad1 li {
-        padding-left: 0px;
+        a:hover{
+            font-size: 200%;
         }
-
-
-        #zad2 {
+        a:active{
             color: black;
         }
-        #zad2 input[type=submit]
-        {
-            width: 100px;
+        img:hover{
+            border: 2px solid black;
         }
-        #zad2 input[type=reset]
-        {
-            width: 100px;
+        input:disabled{
+            border: 2px solid red;
         }
-        #zad2 textarea
-        {
-            border-radius: 15px;
+        input:enabled{
+            border: 2px solid greenyellow;
         }
-        #zad2 input
-        {
-            border-radius: 8px;
-            border-width: 1px;
-        }
+        /*pseudoklasy cykliczne
+        :first-line
+        :first-letter
+        :first-child
+        :last-child
+        :only-child
+        :nth-of-type()
+        */
     </style>
 </head>
 
 <body>
-    <header id="#top">
-        <a href="index.html">
+    <header id="top">
+        <a href="../index.html">
             <p>
-                <h1>Elektronika - Zadania</h1>
+                <h1>Elektronika</h1>
             </p>
         </a>
     </header>
-    
+
     <nav>
-        <a href="index.html">
+        <a href="../index.html">
             <div>Strona główna</div>
         </a>
         <a href="#kontakt">
             <div>Kontakt</div>
         </a>
-        <a href="playground.html">
+        <a href="../playground.html">
             <div>Playground</div>
         </a>
-        <a href="strony_kolegow.html">
+        <a href="../strony_kolegow.html">
             <div>Strony kolegów</div>
         </a> 
-        <a href="zadania.html">
+        <a href="../zadania.html">
             <div>Zadania</div>
         </a>
-        <a href="lekcje/">
+        <a href="../lekcje/">
             <div>Lekcje</div>
-        </a>    
+        </a>
     </nav>
 
-    <!--zad1-->
     <main>
         <section>
-            <article id="zad1">
-                <h3>Zad.1</h3>
-                <p>
-                    Jaś miał kiedyś 39℃ gorączki I myślał, ze C2H5OH mu pomoże. Niestety byl w<br> błędzie. Zaczął więc studiować książki medyczne min: <cite>Leksykon zdrowia</cite>. Nie<br> znalazł odpowiedzi na swoje pytanie ale dowiedział się jak wygląda wątroba:
-                    <br>
-                    <img style="float: left;" src="img/watroba.png" alt="wątroba">
-                    <p>
-                        Lektura spowodowala, ze zainteresował się medycyną. Tak to bylo<br> To co chciał robić w <strong>przyszłości</strong>.<br><br> <q style="font-style: italic;">Jest tysiące chorób, ale tylko jedno zdrowie.</q><br> Ludwig Borne<br><br><br>
-                        <ul style="list-style-type: none;">
-                            Wiedział, ze musi się dużo nauczyć:
-                            <li>- budowy ciała;</li>
-                            <li>- chemii;</li>
-                            <li>- biologii;</li>
-                        </ul>
-                    </p>
-                </p>
-            </article>
-        </section>
-    </main>
+            <article>
+                <img src="../img/pcb.jpg" alt="pcb">
+                <ol>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>a</li>
+                    <li>b</li>
+                </ol>
+                
+                <p>asda</p>
 
-    <script>
-        
-    </script>
-
-    <footer id="kontakt">
-        <a href="#top">
-            <img src="img/pointer_up.png" alt="Powrót"/>
-        </a>
-        <p>Kontakt:</p>
-        <a href="mailto:123@gmail.com">Email</a>
-        
-        <article id="zad2">
-            <h3>Zad.2 - formularz</h3>
-            <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
+                <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
                 <fieldset>
                     <legend>Podstawowe dane</legend>
                     <label> Podaj imie:
@@ -172,8 +151,17 @@
                 <input type="submit" value="Wyślij">
                 <input type="reset" value="Wyczyść">
             </form>
-        </article>
-        
+                
+            </article>
+        </section>
+    </main>
+
+    <footer id="kontakt">
+        <a href="#top">
+            <img src="img/pointer_up.png" alt="Powrót"/>
+        </a>
+        <p>Kontakt:</p>
+        <a href="mailto:123@gmail.com">Email</a>
     </footer>
 </body>
 </html>

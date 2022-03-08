@@ -134,3 +134,51 @@ footer > a {
   height: 200px;
   width: 200px;
 }
+
+/* */
+.lekcja1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pierwszy{
+  height: 300px;
+  width: 300px;
+  border: black 3px solid;
+  margin: 30px;
+}
+.przyklad1{
+  background-color: red;
+  overflow: auto;
+  padding: 20px 30px;
+  border-top: 6px aqua outset;
+}
+.przyklad2{
+  margin: 30px;
+}
+/**/
+
+.lekcja2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #003488;
+  margin: 2px;
+}
+.item1{
+  background-color: rgba(36, 36, 36, 0.6);
+}
+.item2{
+  background-color: rgba(36, 36, 36, 0.7);  
+}
+.item3{
+  background-color: rgba(36, 36, 36, 0.8);  
+}
+.item4{
+  background-color: rgba(36, 36, 36, 0.9);  
+}
+.item5{
+  background-image: linear-gradient(red, yellow);  
+}
