@@ -126,6 +126,10 @@ footer > a {
   color: rgb(65, 65, 255);
 }
 
+header h1::before{
+  content: "Elektronika";
+}
+
 
 /*formularz*/
 #formularz {
