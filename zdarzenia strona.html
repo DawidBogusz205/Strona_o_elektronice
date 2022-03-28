@@ -22,13 +22,28 @@
             text-align: center;
         }
 
-        main div{
-            width: 50%;
-            background-color: red;
-            display: flex;
-            flex: 1;
-        }
-
+        .on{
+			width: 250px; 
+			padding: 7px; 
+			font-family:verdana, arial, sans-serif; 
+			font-weight:boLd; 
+			Letter-spacing:5px; 
+			margin:5px auto 0px auto; 
+			background-color:#77EE44;
+			border:10px inset #77EE44; 
+			text-transform:uppercase; 
+		} 	
+		.off{
+			width:250px; 
+			padding:7px; 
+			font-family:verdana, arial, sans-serif; 
+			font-weight:boLd; 
+			Letter-spacing:5px; 
+			margin:5px auto 0px auto; 
+			background-color:#FF4422; 
+			border:10px outset #FF4422; 
+			text-transform:uppercase; 
+		}
     </style>
 </head>
 
@@ -48,9 +63,6 @@
         <a href="#kontakt">
             <div>Kontakt</div>
         </a>
-        <a href="playground.html">
-            <div>Playground</div>
-        </a>
         <a href="strony_kolegow.html">
             <div>Strony kolegów</div>
         </a> 
@@ -65,20 +77,56 @@
     <main>
         <section>
             <article>
-                <h2>Blur</h2>
-                <div>as</div>
-                <div>es</div>
+                <h2>Click</h2>
+                <p>Przy nacisnieciu na obiekt</p>
+                <input type="button" class="on" id="Click" value="on" >
+            </article>
+            <article>
+                <h2>Dbclick</h2>
+                <p>Przy podwójnym nacisnieciu na obiekt</p>
+                <input type="button" class="on" id="Dbclick" value="on">
+            </article>
 
+            <article>
+                <h2>Mouseout</h2>
+                <p>Przy opuszczeniu obiektu przez mysz</p>
+                <input type="button" class="on" id="Mouseout" value="on">
+            </article>
+
+            <article>
+                <h2>Mouseover</h2>
+                <p>Przy wejsciu do obiektu przez mysz</p>
+                <input type="button" class="on" id="Mouseover" value="on">
+            </article>
+
+            <article>
+                <h2>Mousemove</h2>
+                <p>Przy poruswzaniu myszy na obiekcie</p>
+                <input type="button" class="on" id="Mousemove" value="on">
             </article>
 
             <article>
                 <h2>Change</h2>
-
+                <p>Jak element traci focus oraz zmienia sie jego wartosc</p>
+                <textarea class="on" id="Change"></textarea>
             </article>
     
             <article>
                 <h2>Focus</h2>
+                <p>Jak element zyska focus</p>
+                <input type="button" class="on" id="Fokus">
+            </article>
 
+            <article>
+                <h2>Blur</h2>
+                <p>Jak element traci focus</p>
+                <input type="button" class="on" id="Blur">
+            </article>
+
+            <article>
+                <h2>Select</h2>
+                <p>Jak element traci focus</p>
+                <fieldset class="on" id="Select">a</fieldset>
             </article>
 
             <article>
@@ -96,24 +144,119 @@
 
             </article>
 
-            <article>
-                <h2>Select</h2>
-
-            </article>
-
-            <article>
-                <h2>Change</h2>
-
-            </article>
-    
-            <article>
-                <h2>Focus</h2>
-
-            </article>
+            
         </section>
     </main>
 
     <script>
+        document.getElementById("Click").addEventListener("click",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Dbclick").addEventListener("dblclick",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Mouseout").addEventListener("mouseout",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Mouseover").addEventListener("mouseover",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Mousemove").addEventListener("mousemove",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Change").addEventListener("change",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+            }
+            else
+            {
+                this.className="on";
+            }
+        });
+
+        document.getElementById("Fokus").addEventListener("focus",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+            }
+            else
+            {
+                this.className="on";
+            }
+        });
+
+        document.getElementById("Blur").addEventListener("blur",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+            }
+            else
+            {
+                this.className="on";
+            }
+        });
+
+        document.getElementById("Sel").addEventListener("select",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+            }
+            else
+            {
+                this.className="on";
+            }
+        });
 
     </script>
     

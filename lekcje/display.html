@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset='utf-8'/>         <!--polski typ znakowy-->
+    <title>Elektronika</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'/>    <!--zaimportowanie pliku css-->
+    <meta name="keywords" content="elektronika,układy elektroniczne, pcb"/>
+    <meta name="description" content="Forum, porady i wszystko o elektronice"/>
+    <meta name="autor" content="Dawid'bugi'Bogusz"/>
+    <meta name="robots" content="all"/>     <!-- index, noindex, all, none, follow, nofollow-->
+    <!--czcionka roboto VVV-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        p{
+            display: list-item;
+            list-style-position: inside;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .submenu{
+            display: none;
+            background-color: rosybrown;
+        }
+        .menu:hover .submenu{
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <a href="../index.html">
+            <p>
+                <h1></h1>
+            </p>
+        </a>
+    </header>
+
+    <nav>
+        <a href="../index.html">
+            <div>Strona główna</div>
+        </a>
+        <a href="#kontakt">
+            <div>Kontakt</div>
+        </a>
+        <a href="../strony_kolegow.html">
+            <div>Strony kolegów</div>
+        </a> 
+        <a href="../zadania.html">
+            <div>Zadania</div>
+        </a>
+        <a href="../lekcje/">
+            <div>Lekcje</div>
+        </a>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <div class="box orange">1</div>
+                <div class="box blue">2</div>
+                <div class="box green">3</div>
+                <div class="box red">4</div>
+                <p>x</p>
+                <p>x</p>
+                <h2>nr</h2>
+                <h2>e</h2>
+            </article>
+
+            <article>
+                <div class="box menu">najedz
+                    <div class="box submenu">asd</div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="kontakt">
+        <a href="#top">
+            <img src="../img/pointer_up.png" alt="Powrót"/>
+        </a>
+        <p>Kontakt:</p>
+        <a href="mailto:123@gmail.com">Email</a>
+    </footer>
+</body>
+</html>

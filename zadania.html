@@ -73,6 +73,21 @@
         #zad3 div:hover{
             background-color: white;
         }
+
+        #zad4 .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        #zad4 .submenu{
+            display: none;
+            background-color: rosybrown;
+        }
+        #zad4 .menu:hover + .submenu{
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -144,6 +159,17 @@
                 <div>siedemnascie</div>
                 <div>osiemnascie</div>
                 <div>dziewietnascie</div>
+            </article>
+
+            <article id="zad4">
+                <h3>Zad.4</h3>
+                <div class="box menu">
+                    menu
+                </div>
+                <div class="box submenu">
+                    submenu
+                </div>
+
             </article>
         </section>
     </main>
