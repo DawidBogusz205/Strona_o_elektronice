@@ -21,6 +21,15 @@
         main h2{
             text-align: center;
         }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article{
+            flex: 1;
+            margin-right: 10px;
+        }
 
         .on{
 			width: 250px; 
@@ -50,9 +59,7 @@
 <body>
     <header id="top">
         <a href="index.html">
-            <p>
-                <h1> - Zdarzenia w JS</h1>
-            </p>
+            <h1> - Zdarzenia w JS</h1>
         </a>
     </header>
 
@@ -72,18 +79,21 @@
         <a href="lekcje/">
             <div>Lekcje</div>
         </a>
+        <a href="zdarzenia strona.html">
+            <div>Zdarzenia</div>
+        </a>
     </nav>
-    
+
     <main>
         <section>
             <article>
                 <h2>Click</h2>
-                <p>Przy nacisnieciu na obiekt</p>
+                <p>Przy nacisnięciu na obiekt</p>
                 <input type="button" class="on" id="Click" value="on" >
             </article>
             <article>
                 <h2>Dbclick</h2>
-                <p>Przy podwójnym nacisnieciu na obiekt</p>
+                <p>Przy podwójnym nacisnięciu na obiekt</p>
                 <input type="button" class="on" id="Dbclick" value="on">
             </article>
 
@@ -94,6 +104,18 @@
             </article>
 
             <article>
+                <h2>Mouseup</h2>
+                <p>Przy puszczeniu naciśnięcia myszy</p>
+                <input type="button" class="on" id="Mouseup" value="on">
+            </article>
+
+            <article>
+                <h2>Mousedown</h2>
+                <p>Przy opuszczeniu przycisku myszy</p>
+                <input type="button" class="on" id="Mousedown" value="on">
+            </article>
+
+            <article>
                 <h2>Mouseover</h2>
                 <p>Przy wejsciu do obiektu przez mysz</p>
                 <input type="button" class="on" id="Mouseover" value="on">
@@ -101,7 +123,7 @@
 
             <article>
                 <h2>Mousemove</h2>
-                <p>Przy poruswzaniu myszy na obiekcie</p>
+                <p>Przy poruszaniu myszy na obiekcie</p>
                 <input type="button" class="on" id="Mousemove" value="on">
             </article>
 
@@ -125,26 +147,9 @@
 
             <article>
                 <h2>Select</h2>
-                <p>Jak element traci focus</p>
-                <fieldset class="on" id="Select">a</fieldset>
+                <p>Wywoluje sie gdy zaznaczymy literki w elemencie</p>
+                <textarea class="on" id="Sel">aasdasdadad</textarea>
             </article>
-
-            <article>
-                <h2>Reset</h2>
-
-            </article>
-
-            <article>
-                <h2>Submit</h2>
-
-            </article>
-    
-            <article>
-                <h2>Resize</h2>
-
-            </article>
-
-            
         </section>
     </main>
 
@@ -173,9 +178,36 @@
                 this.className="on";
                 this.value="on"
             }
+            console.log("jaj");
         });
 
         document.getElementById("Mouseout").addEventListener("mouseout",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Mouseup").addEventListener("mouseup",function(){
+            if(this.className == "on")
+            {
+                this.className="off";
+                this.value="off"
+            }
+            else
+            {
+                this.className="on";
+                this.value="on"
+            }
+        });
+
+        document.getElementById("Mousedown").addEventListener("mousedown",function(){
             if(this.className == "on")
             {
                 this.className="off";
@@ -257,14 +289,13 @@
                 this.className="on";
             }
         });
-
     </script>
     
+    <a id="go_to_top" href="#top">
+        <img src="img/pointer_up.png" alt="Powrót"/>
+    </a>
 
     <footer id="kontakt">
-        <a href="#top">
-            <img src="img/pointer_up.png" alt="Powrót"/>
-        </a>
         <p>Kontakt:</p>
         <a href="mailto:123@gmail.com">Email</a>
         <br>

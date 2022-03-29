@@ -17,15 +17,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        h3::before{
-            content: "Masno";
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin-bottom: 20px;
+            display: inline-block;
         }
-        h3::after{
-            content: "essa";
+        .box:hover{
+            transition: 2s;
+            background-color: red;
+        }
+        .box{
+            transition: 2s;
+            background-color: aqua;
         }
     </style>
-
 </head>
+
 <body>
     <header id="top">
         <a href="../index.html">
@@ -35,7 +44,6 @@
         </a>
     </header>
 
-    <div ></div>
     <nav>
         <a href="../index.html">
             <div>Strona główna</div>
@@ -57,11 +65,9 @@
     <main>
         <section>
             <article>
-                <h3>asd</h3>
-                <p>
-                    is est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-                </p>
+                <div class="box">asd</div>
                 
+               
             </article>
         </section>
     </main>

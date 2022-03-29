@@ -88,15 +88,21 @@
         #zad4 .menu:hover + .submenu{
             display: inline-block;
         }
+
+        #zad5 table, th, td{
+            border:1px solid black;
+            padding: 15px;
+        }
+        #zad5 th{
+            background-color: lightblue;
+        }
     </style>
 </head>
 
 <body>
     <header id="#top">
         <a href="index.html">
-            <p>
-                <h1> - Zadania</h1>
-            </p>
+            <h1> - Zadania</h1>
         </a>
     </header>
     
@@ -116,6 +122,9 @@
         <a href="lekcje/">
             <div>Lekcje</div>
         </a>    
+        <a href="zdarzenia strona.html">
+            <div>Zdarzenia</div>
+        </a>
     </nav>
 
     <!--zad1-->
@@ -162,7 +171,7 @@
             </article>
 
             <article id="zad4">
-                <h3>Zad.4</h3>
+                <h3>Zad.4 - display none menu i submenu</h3>
                 <div class="box menu">
                     menu
                 </div>
@@ -171,17 +180,67 @@
                 </div>
 
             </article>
+
+            <article id="zad5">
+                <h3>Zad.5 - tabela</h3>
+
+                <table>
+                    <!--
+                    lp
+                    6 ul przedmiotow
+                    osobe prowadzaca
+                    srednia-->
+                    <tr>
+                        <th>l.p</th>
+                        <th>Przedmiot</th>
+                        <th>Nauczyciel</th>
+                        <th>Średnia</th>                       
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>W-f</td>
+                        <td>Góral</td>
+                        <td>5.0</td>                       
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Strony</td>
+                        <td>Piotrowska</td>
+                        <td>4.0</td>                       
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Aplikacje</td>
+                        <td>Palka</td>
+                        <td>4.5</td>                       
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Inf.Rozszerzona</td>
+                        <td>Szuster</td>
+                        <td>3.5</td>                       
+                    </tr>
+                    
+                    <tr>
+                        <td>6</td>
+                        <td>Matematyka</td>
+                        <td>Zelent</td>
+                        <td>3.5</td>                       
+                    </tr>
+                </table>
+            </article>
         </section>
     </main>
 
-    <script>
-        
-    </script>
+    <a id="go_to_top" href="#top">
+        <img src="img/pointer_up.png" alt="Powrót"/>
+    </a>
 
     <footer id="kontakt">
-        <a href="#top">
-            <img src="img/pointer_up.png" alt="Powrót"/>
-        </a>
         <p>Kontakt:</p>
         <a href="mailto:123@gmail.com">Email</a>
         

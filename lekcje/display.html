@@ -44,7 +44,7 @@
             display: none;
             background-color: rosybrown;
         }
-        .menu:hover .submenu{
+        .menu:hover + .submenu{
             display: inline-block;
         }
 
@@ -92,19 +92,20 @@
             </article>
 
             <article>
-                <div class="box menu">najedz
-                    <div class="box submenu">asd</div>
-                </div>
+                <div class="box menu">najedz</div>
+                <div class="box submenu">submenu</div>
             </article>
         </section>
     </main>
 
+    <a id="go_to_top" href="#top">
+        <img src="../img/pointer_up.png" alt="Powrót"/>
+    </a>
+
     <footer id="kontakt">
-        <a href="#top">
-            <img src="../img/pointer_up.png" alt="Powrót"/>
-        </a>
         <p>Kontakt:</p>
         <a href="mailto:123@gmail.com">Email</a>
+        <br>
     </footer>
 </body>
 </html>

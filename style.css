@@ -81,6 +81,7 @@ nav>a{
   flex: 1;
 }
 nav > a > div{
+  transition: 1s;
   background-color: gainsboro;
   padding: 10px;
   margin-left: 5px;
@@ -91,6 +92,7 @@ nav > a > div{
   border-radius: 20px;
 }
 nav > a > div:hover {
+  transition: 1s;
   background-color: gray;
   cursor: pointer;
 }
@@ -120,6 +122,16 @@ footer > a {
 
 header h1::before{
   content: "Elektronika";
+}
+
+#go_to_top img{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 0.1vw solid black;
+  border-radius: 30%;
+  width: 2%;
+  height: 4%;
 }
 
 /*formularz*/
