@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        /*zadania*/
+        /*zad1*/
         #zad1 {
         color: black;
         }
@@ -29,7 +29,7 @@
         padding-left: 0px;
         }
 
-
+        /*zad2*/
         #zad2 {
             color: black;
         }
@@ -51,6 +51,7 @@
             border-width: 1px;
         }
 
+        /*zad3*/
         #zad3 div{
             height: 30px;
             padding: 5px;
@@ -74,6 +75,7 @@
             background-color: white;
         }
 
+        /*zad4*/
         #zad4 .box{
             height: 200px;
             width: 200px;
@@ -89,12 +91,22 @@
             display: inline-block;
         }
 
+        /*zad5*/
         #zad5 table, th, td{
-            border:1px solid black;
-            padding: 15px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #zad5 table{
+            background-color: gainsboro;
+            border-radius: 25px;
         }
         #zad5 th{
-            background-color: lightblue;
+            background-color: gainsboro;
+            min-width: 7vw;
+        }
+        #zad5 td{
+            background-color: white;
+            height: 2vh;
         }
     </style>
 </head>
@@ -147,6 +159,64 @@
                     </p>
                 </p>
             </article>
+
+            <article id="zad2">
+                <h3>Zad.2 - formularz</h3>
+                <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
+                    <fieldset>
+                        <legend>Podstawowe dane</legend>
+                        <label> Podaj imie:
+                        <br>
+                        <input type="text" size="10" name="imie" autocomplete="off" placeholder="imie" required="required">
+                        </label>
+                        <br><br>
+                        <label> Podaj nazwisko:
+                            <br>
+                            <input type="text" size="10" name="nazwisko" autocomplete="off" placeholder="nazwisko" required="required">
+                        </label>
+                        <br><br>
+                        <label> Podaj email:
+                            <br>
+                            <input type="email" name="email" placeholder="email" required="required">
+                        </label>
+                        <br><br>
+                        <label> Podaj numer telefonu: (opcjonalnie)
+                            <br>
+                            <input type="tel" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="000-000-000">
+                        </label>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Wybierz typ subskrybcji:</legend>
+                        <input type="radio" name="subskrybcja" value="standard" required="required"> Standard
+                        <input type="radio" name="subskrybcja" value="premium" required="required"> Premium
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Zgoda na RODO</legend>
+                        <label style="font-style: italic;">
+                            <input type="checkbox" required="required">
+                            Wyrażam zgodę na przetwarzanie moich danych osobowych (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+                        </input>
+                        </label>
+                    </fieldset>
+    
+                    <br>
+    
+                    <label> Dodatkowe uwagi:
+                        <br>
+                        <textarea name="uwagi" cols="25" rows="10"></textarea>
+                    </label>
+                    <br>                    
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Wyczyść">
+                </form>
+            </article>
+
             <article id="zad3">
                 <h3>Zad.3</h3>
                 <div>jeden</div>
@@ -185,51 +255,77 @@
                 <h3>Zad.5 - tabela</h3>
 
                 <table>
-                    <!--
-                    lp
-                    6 ul przedmiotow
-                    osobe prowadzaca
-                    srednia-->
                     <tr>
-                        <th>l.p</th>
-                        <th>Przedmiot</th>
-                        <th>Nauczyciel</th>
-                        <th>Średnia</th>                       
+                        <td style="border-top-left-radius: 25px;" rowspan="3"></td>
+                        <th style="border-top-right-radius: 25px;" colspan="5">Wymagania</th>
                     </tr>
-
+    
                     <tr>
-                        <td>2</td>
-                        <td>W-f</td>
-                        <td>Góral</td>
-                        <td>5.0</td>                       
+                        <th>Konieczne <br> (ocena dopuszczająca)</th>
+                        <th>Podstawowe <br> (ocena dostateczna)</th>
+                        <th>Rozszerzone <br> (ocena dobra)</th>
+                        <th>Dopełniające <br> (ocena bardzo dobra)</th>
+                        <th>Wykraczające <br> (ocena celująca)</th>
                     </tr>
-
+    
                     <tr>
-                        <td>3</td>
-                        <td>Strony</td>
-                        <td>Piotrowska</td>
-                        <td>4.0</td>                       
+                        <th colspan="5">Uczeń</th>
                     </tr>
-
+    
                     <tr>
-                        <td>4</td>
-                        <td>Aplikacje</td>
-                        <td>Palka</td>
-                        <td>4.5</td>                       
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <td>Inf.Rozszerzona</td>
-                        <td>Szuster</td>
-                        <td>3.5</td>                       
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
                     </tr>
                     
                     <tr>
-                        <td>6</td>
-                        <td>Matematyka</td>
-                        <td>Zelent</td>
-                        <td>3.5</td>                       
+                        <td colspan="6"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="border-bottom-left-radius: 25px;" rowspan="6"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3"></td>
+                        <td></td>
+                        <td></td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="3"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="border-bottom-right-radius: 20px;"></td>
                     </tr>
                 </table>
             </article>
@@ -242,65 +338,7 @@
 
     <footer id="kontakt">
         <p>Kontakt:</p>
-        <a href="mailto:123@gmail.com">Email</a>
-        
-        <article id="zad2">
-            <h3>Zad.2 - formularz</h3>
-            <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
-                <fieldset>
-                    <legend>Podstawowe dane</legend>
-                    <label> Podaj imie:
-                    <br>
-                    <input type="text" size="10" name="imie" autocomplete="off" placeholder="imie" required="required">
-                    </label>
-                    <br><br>
-                    <label> Podaj nazwisko:
-                        <br>
-                        <input type="text" size="10" name="nazwisko" autocomplete="off" placeholder="nazwisko" required="required">
-                    </label>
-                    <br><br>
-                    <label> Podaj email:
-                        <br>
-                        <input type="email" name="email" placeholder="email" required="required">
-                    </label>
-                    <br><br>
-                    <label> Podaj numer telefonu: (opcjonalnie)
-                        <br>
-                        <input type="tel" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="000-000-000">
-                    </label>
-                </fieldset>
-
-                <br>
-                
-                <fieldset>
-                    <legend>Wybierz typ subskrybcji:</legend>
-                    <input type="radio" name="subskrybcja" value="standard" required="required"> Standard
-                    <input type="radio" name="subskrybcja" value="premium" required="required"> Premium
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Zgoda na RODO</legend>
-                    <label style="font-style: italic;">
-                        <input type="checkbox" required="required">
-                        Wyrażam zgodę na przetwarzanie moich danych osobowych (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
-                    </input>
-                    </label>
-                </fieldset>
-
-                <br>
-
-                <label> Dodatkowe uwagi:
-                    <br>
-                    <textarea name="uwagi" cols="25" rows="10"></textarea>
-                </label>
-                <br>                    
-                <input type="submit" value="Wyślij">
-                <input type="reset" value="Wyczyść">
-            </form>
-        </article>
-        
+        <a href="mailto:123@gmail.com">Email</a> 
     </footer>
 </body>
 </html>

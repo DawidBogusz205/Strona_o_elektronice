@@ -17,20 +17,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        .box{
-            height: 200px;
-            width: 200px;
-            background-color: aqua;
-            margin-bottom: 20px;
-            display: inline-block;
+        .item {
+            width: 400px;
+            height: 300px;
+            border: 2px solid #45d1ff;
+            margin: 20px;
         }
-        .box:hover{
-            transition: 2s;
-            background-color: red;
+
+        .item4 {
+            width: 800px;
+            height: 400px;
+            background-image: url(../img/pcb.jpg);
+            background-size: 100px 200px;
+            background-repeat: no-repeat;
+            background-position: space;
         }
-        .box{
-            transition: 2s;
-            background-color: aqua;
+
+        .item5 {
+            BACKGROUND-IMAGE: LINEAR-GRADIENT(180DEG, RED, BLUE);
+        }
+
+        .item6 {
+            BACKGROUND-IMAGE: LINEAR-GRADIENT(TO RIGHT, RED, BLUE)
+        }
+
+        .item7 {
+            BACKGROUND-IMAGE: RADIAL-GRADIENT(RED 5%, YELLOW 15%, GREEN 60%);
+        }
+
+        .item8 {
+            width: 800px;
+            height: 400px;
+            background-image: url(../img/pcb.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            overflow: auto;
+            background-attachment: local;
         }
     </style>
 </head>
@@ -65,7 +87,15 @@
     <main>
         <section>
             <article>
-                <div class="box">asd</div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+                <div class="item item7"></div>
+                <div class="item item8">
+                    <P>
+                        ente, maxime commodi assumenda perferendis reprehenderit quos doloremque eveniet officiis id consequatur est a, tenetur architecto iusto.</possimus>
+                    </P>
+                </div>
             </article>
         </section>
     </main>
