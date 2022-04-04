@@ -1,0 +1,96 @@
+/*zad1*/
+#zad1 {
+    color: black;
+}
+#zad1 img {
+    height: 150px;
+    width: 10%;
+}
+#zad1 li {
+    padding-left: 0px;
+}
+
+/*zad2*/
+#zad2 {
+    color: black;
+}
+#zad2 input[type=submit]
+{
+    width: 100px;
+}
+#zad2 input[type=reset]
+{
+    width: 100px;
+}
+#zad2 textarea
+{
+    border-radius: 15px;
+}
+#zad2 input
+{
+    border-radius: 8px;
+    border-width: 1px;
+}
+
+/*zad3*/
+#zad3 div{
+    height: 30px;
+    padding: 5px;
+}
+#zad3 div:nth-child(5n+2){
+    background-color: #8fae3a;
+}
+#zad3 div:nth-child(5n+3){
+    background-color: #9dc03e;
+}
+#zad3 div:nth-child(5n+4){
+    background-color: #acd244;
+}
+#zad3 div:nth-child(5n+5){
+    background-color: #b3dd47;
+}
+#zad3 div:nth-child(5n+6){
+    background-color: #c1eb4e;
+}
+#zad3 div:hover{
+    background-color: white;
+}
+
+/*zad4*/
+#zad4 .box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+#zad4 .submenu{
+    display: none;
+    background-color: rosybrown;
+}
+#zad4 .menu:hover + .submenu{
+    display: inline-block;
+}
+
+/*zad5*/
+#zad5 table, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+#zad5 table{
+    background-color: gainsboro;
+    border-radius: 25px;
+}
+#zad5 th{
+    background-color: #eeeeee;
+    min-width: 7vw;
+}
+#zad5 td{
+    background-color: white;
+    height: 2vh;
+    max-width: 2vw;
+    overflow: hidden;
+}
+#zad5 .box{
+    background-color: #005500;
+}
