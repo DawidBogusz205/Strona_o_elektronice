@@ -1,135 +1,67 @@
-document.getElementById("Click").addEventListener("click",function(){
-    if(this.className == "on")
+function default_change(element){
+    if(element.className == "on")
     {
-        this.className="off";
-        this.value="off"
+        element.className="off";
+        element.value="off"
     }
     else
     {
-        this.className="on";
-        this.value="on"
+        element.className="on";
+        element.value="on"
     }
+}
+
+function default_change_only_class(element){
+    if(element.className == "on")
+    {
+        element.className="off";
+    }
+    else
+    {
+        element.className="on";
+    }
+}
+
+document.getElementById("Click").addEventListener("click",function(){
+    default_change(this);
 });
 
 document.getElementById("Dbclick").addEventListener("dblclick",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
-    console.log("jaj");
+    default_change(this);
 });
 
 document.getElementById("Mouseout").addEventListener("mouseout",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
+    default_change(this);
 });
 
 document.getElementById("Mouseup").addEventListener("mouseup",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
+    default_change(this);
 });
 
 document.getElementById("Mousedown").addEventListener("mousedown",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
+    default_change(this);
 });
 
 document.getElementById("Mouseover").addEventListener("mouseover",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
+    default_change(this);
 });
 
 document.getElementById("Mousemove").addEventListener("mousemove",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-        this.value="off"
-    }
-    else
-    {
-        this.className="on";
-        this.value="on"
-    }
+    default_change(this);
 });
 
 document.getElementById("Change").addEventListener("change",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-    }
-    else
-    {
-        this.className="on";
-    }
+    default_change_only_class(this);
 });
 
 document.getElementById("Fokus").addEventListener("focus",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-    }
-    else
-    {
-        this.className="on";
-    }
+    default_change_only_class(this);
 });
 
 document.getElementById("Blur").addEventListener("blur",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-    }
-    else
-    {
-        this.className="on";
-    }
+    default_change_only_class(this);
 });
 
 document.getElementById("Sel").addEventListener("select",function(){
-    if(this.className == "on")
-    {
-        this.className="off";
-    }
-    else
-    {
-        this.className="on";
-    }
+    default_change_only_class(this);
 });

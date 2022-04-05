@@ -17,15 +17,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        table, th, td{
+        .lekcja1 table, th, td{
             border:1px solid black;
             padding: 15px;
         }
 
-        th{
+        .lekcja1 th{
             background-color: lightblue;
         }
 
+        .lekcja2 table{
+            border: 1px double red;
+            margin: auto;
+            border-spacing: 10px;
+            border-collapse: separate;
+            width: 80%;
+        }
+        .lekcja2 thead{
+            background-color: violet;
+        }
+        .lekcja2 tr:nth-child(even){
+            background-color: wheat;
+        }
+        
     </style>
 </head>
 
@@ -58,9 +72,9 @@
 
     <main>
         <section>
-            <article>
+            <article class="lekcja1">
 
-                <table>
+                <table >
                     <tr><!--wiersz-->
                         
                         <th>l.p</th><!--nagłówek-->
@@ -73,7 +87,7 @@
 
             </article>
 
-            <article>
+            <article class="lekcja1">
                 <table>
                     <tr>
                         <th colspan="4">l.p</th> <!--połączenie wierszy do 1 kolumny-->
@@ -126,7 +140,7 @@
                 </table>
             </article>
 
-            <article>
+            <article class="lekcja1">
                 <table>
                     <!--
                     lp
@@ -174,6 +188,135 @@
                         <td>Zelent</td>
                         <td>3.5</td>                       
                     </tr>
+                </table>
+            </article>
+
+            <article class="lekcja2">
+                <table>
+                    <colgroup>
+                        <col span="1">
+                        <col span="1" style="background-color: turquoise;">
+                        <col span="3" style="background-color: teal;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>l.p</th>
+                            <th>imie</th>
+                            <th>nazwisko</th>
+                            <th>login</th>
+                        </tr>
+                    </thead>                   
+                    
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            Esse similique porro deleniti repellendus autem atque eius hic quod sed reprehenderit consequuntur perferendis corporis totam, ipsum aliquid mollitia iste sunt, incidunt dolores beatae nam! Reiciendis minima nulla doloremque laboriosam.
+                            Unde id modi nihil sapiente non repudiandae fuga! Sint illo fugiat non minus, reiciendis assumenda deserunt. Placeat repudiandae adipisci praesentium sed rem animi odio, aperiam modi dicta mollitia, dolorem non?</td>
+                            <td style="vertical-align: bottom;">sad</td>
+                            <td style="vertical-align: top;">asd</td>
+                            <td style="vertical-align: middle;">fdfasd</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td style="vertical-align: baseline;">afdh</td>
+                            <td>hjfg</td>
+                            <td>vbv</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dfgr</td>
+                            <td>asd</td>
+                            <td>we</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="lekcja2">
+                <table>
+                    <caption>
+                        nazwa
+                    </caption>
+                        
+                    <colgroup>
+                        <col span="2">
+                        <col span="4" style="background-color: brown; width: 10%;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>l.p</th>
+                            <th>imie</th>
+                            <th>nazwisko</th>
+                            <th>login</th>
+                        </tr>
+                    </thead>                   
+                    
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            Esse similique porro deleniti repellendus autem atque eius hic quod sed reprehenderit consequuntur perferendis corporis totam, ipsum aliquid mollitia iste sunt, incidunt dolores beatae nam! Reiciendis minima nulla doloremque laboriosam.
+                            Unde id modi nihil sapiente non repudiandae fuga! Sint illo fugiat non minus, reiciendis assumenda deserunt. Placeat repudiandae adipisci praesentium sed rem animi odio, aperiam modi dicta mollitia, dolorem non?</td>
+                            <td style="vertical-align: bottom;">sad</td>
+                            <td style="vertical-align: top;">asd</td>
+                            <td style="vertical-align: middle;">fdfasd</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td style="vertical-align: baseline;">afdh</td>
+                            <td>hjfg</td>
+                            <td>vbv</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dfgr</td>
+                            <td>asd</td>
+                            <td>we</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste provident accusantium repellat quae aliquam sint, laborum, illum magni modi, reiciendis pariatur consectetur odio recusandae quod! Quo omnis provident necessitatibus!
+                            <td>dgh</td>
+                            <td>dfg</td>
+                            <td>bvc</td>
+                        </tr>
+                    </tbody>
                 </table>
             </article>
         </section>
