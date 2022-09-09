@@ -73,7 +73,7 @@
 }
 
 /*zad5*/
-#zad5 table, th, td{
+#zad5 table,#zad5 th,#zad5 td{
     border: 1px solid black;
     padding: 10px;
 }
@@ -93,4 +93,31 @@
 }
 #zad5 .box{
     background-color: #005500;
+}
+
+
+/*zad6*/
+#zad6 .tab1 table, th, td{
+    border:1px solid black;
+    padding: 15px;
+}
+#zad6 .tab1 table{
+    margin: auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 80%;
+}
+#zad6 .tab1 td, th, td img{
+    width: 100px;
+    height: 100px;
+}
+#zad6 .kolory td:nth-child(odd){
+    background-color: purple;
+}
+#zad6 .kolory td:nth-child(even){
+    background-color: gold;
+}
+
+#zad6 table{
+    border-collapse: collapse;
 }

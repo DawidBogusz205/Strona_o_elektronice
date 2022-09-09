@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset='utf-8'/>         <!--polski typ znakowy-->
+    <title>Elektronika</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'/>    <!--zaimportowanie pliku css-->
+    <!--<link rel="icon" href="img/header_pcb.png" sizes="16x16" type="image/png">-->
+    <meta name="keywords" content="elektronika,układy elektroniczne, pcb"/>
+    <meta name="description" content="Forum, porady i wszystko o elektronice"/>
+    <meta name="autor" content="Dawid'bugi'Bogusz"/>
+    <meta name="robots" content="all"/>     <!-- index, noindex, all, none, follow, nofollow-->
+    <!--czcionka roboto VVV-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="top">
+        <a href="index.html">
+            <h1> - Formularz Kontaktowy</h1>
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">
+            <div>Strona główna</div>
+        </a>
+        <a href="#kontakt">
+            <div>Kontakt</div>
+        </a>
+        <a href="strony_kolegow.html">
+            <div>Strony kolegów</div>
+        </a> 
+        <a href="zadania.html">
+            <div>Zadania</div>
+        </a>
+        <a href="lekcje/">
+            <div>Lekcje</div>
+        </a>
+        <a href="zdarzenia strona.html">
+            <div>Zdarzenia</div>
+        </a>
+    </nav>
+
+    <main>
+        <section>
+            <article id="formularz">
+            <form action="src/form.html" method="post" action="mailto:bugibugipl@gmail.com">
+                <fieldset>
+                    <legend>Podstawowe dane</legend>
+                    <label> Podaj imie:
+                    <br>
+                    <input type="text" size="10" name="imie" autocomplete="off" placeholder="imie" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj nazwisko:
+                        <br>
+                        <input type="text" size="10" name="nazwisko" autocomplete="off" placeholder="nazwisko" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj email:
+                        <br>
+                        <input type="email" name="email" placeholder="email" required="required">
+                    </label>
+                    <br><br>
+                    <label> Podaj numer telefonu: (opcjonalnie)
+                        <br>
+                        <input type="tel" name="nr telefonu" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" placeholder="000-000-000">
+                    </label>
+                </fieldset>
+
+                <br>
+                
+                <fieldset>
+                    <legend>Wybierz typ subskrybcji:</legend>
+                    <input type="radio" name="subskrybcja" value="standard" required="required"> Standard
+                    <input type="radio" name="subskrybcja" value="premium" required="required"> Premium
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Zgoda na RODO</legend>
+                    <label style="font-style: italic;">
+                        <input type="checkbox" name="rodo" required="required">
+                        Wyrażam zgodę na przetwarzanie moich danych osobowych (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+                    </input>
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <label> Dodatkowe uwagi:
+                    <br>
+                    <textarea name="uwagi" cols="25" rows="10"></textarea>
+                </label>
+                <br>                    
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </form>
+        </article>
+        </aside>
+    </main>
+
+    <a id="go_to_top" href="#top">
+        <img src="img/pointer_up.png" alt="Powrót"/>
+    </a>
+
+    <footer id="kontakt">
+        <p>Kontakt:</p>
+        <a href="mailto:123@gmail.com">Email</a>
+        <br>
+
+        <p>Formularz kontaktowy:</p>
+        <a href="form_kontakt.html">formularz</a>
+    </footer>
+</body>
+</html>
